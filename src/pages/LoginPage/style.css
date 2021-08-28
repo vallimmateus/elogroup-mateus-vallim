@@ -22,6 +22,7 @@ body {
 	align-items: center;
 	color: white;
 	flex-direction: column;
+	position: relative;
 }
 
 form {
@@ -63,4 +64,12 @@ form input[value="Register"] {
 
 form input[value="Register"] {
 	background-color: #424242;
+}
+
+svg {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	cursor: pointer;
+	padding: 5px;
 }

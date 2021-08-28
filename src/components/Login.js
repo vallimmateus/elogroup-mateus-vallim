@@ -7,14 +7,13 @@ export default function Login({ toggle }) {
 			<TextField name="Usuário" required />
 			<TextField name="Senha" required />
 			<input type="submit" value="Login" />
-			<input type="button" value="Register" />
-			<button
+			<input
+				type="button"
+				value="Register"
 				onClick={() => {
 					toggle(true);
 				}}
-			>
-				Register
-			</button>
+			/>
 		</form>
 	);
 }
