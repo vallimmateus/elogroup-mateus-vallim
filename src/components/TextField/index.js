@@ -4,7 +4,7 @@ import "./style.css";
 function TextField({ name = "label", placeholder = "", required = false }) {
 	return (
 		<div className="field">
-			<label for={name}>
+			<label htmlFor={name}>
 				{name}
 				{required ? " *" : ""}
 			</label>
