@@ -1,0 +1,26 @@
+div.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 5px;
+    width: 100%;
+}
+
+.field input {
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+    max-width: 350px;
+    width: 100%;
+}
+
+.field input:focus,
+.field input:hover {
+    background-color: #fff2;
+    outline: none;
+}
