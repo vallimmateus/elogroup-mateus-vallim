@@ -1,0 +1,45 @@
+div.home {
+	flex: 1;
+	display: flex;
+	padding: 75px;
+	color: #fff;
+}
+
+.home > * {
+	height: 100%;
+	border-radius: 20px;
+}
+
+.home > table {
+	flex: 1;
+	background: linear-gradient(#070f1166, #070f1100);
+	margin-right: 40px;
+}
+
+.home table th {
+	display: flex;
+	height: 90px;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.home table th td {
+	position: relative;
+	font-size: 25px;
+	z-index: 0;
+}
+
+.home table th td::after {
+	content: "";
+	position: absolute;
+	width: calc(100% + 20px);
+	height: 7px;
+	bottom: 2px;
+	left: -10px;
+	background-color: #ff5e42;
+	z-index: -1;
+}
+
+.home > div {
+	background: linear-gradient(#ff5e42, #ff5e4200);
+}
