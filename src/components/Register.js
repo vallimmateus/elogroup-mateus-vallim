@@ -10,7 +10,7 @@ export default function Login() {
 			<input
 				type="submit"
 				value="Register"
-				style={{ backgroundColor: "#ea4f3e" }}
+				style={{ backgroundColor: "var(--primary)" }}
 			/>
 		</form>
 	);

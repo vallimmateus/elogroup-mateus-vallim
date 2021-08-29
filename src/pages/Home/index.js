@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import Card from "../../components/Card";
 
 export default function Home() {
 	return (
@@ -11,7 +12,9 @@ export default function Home() {
 					<td>Reunião Agendada</td>
 				</th>
 				<tr>
-					<td></td>
+					<td>
+						<Card />
+					</td>
 					<td></td>
 					<td></td>
 				</tr>

@@ -1,0 +1,104 @@
+.card {
+	position: relative;
+	height: 180px;
+	width: calc(100% - 90px);
+	margin: 10px 20px;
+	border-radius: 15px 15px 0 0;
+	background: linear-gradient(var(--bg-10), var(--bg-60));
+	background-size: 100% 125%;
+	background-position-y: top;
+	font-weight: normal;
+	padding: 0 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.card:hover {
+	/* transform: scale(1.02); */
+	background-position-y: bottom;
+}
+
+.card * {
+	margin: 0;
+	padding: 0;
+}
+
+.card .border-bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background-color: var(--primary);
+}
+
+.card .edit {
+	position: absolute;
+	height: calc(1em + 5px);
+	width: calc(1em + 5px);
+	text-align: center;
+	bottom: 10px;
+	right: 10px;
+	border: 2px solid #fff3;
+	border-radius: 8px;
+	padding: 5px;
+	display: inline;
+	cursor: pointer;
+}
+
+.card .edit:hover {
+	border-color: #fff6;
+	background-color: #fff1;
+}
+
+.card .title {
+	display: flex;
+	font-size: 18px;
+	min-height: 60px;
+	align-items: center;
+}
+
+.card .info {
+	font-size: 11px;
+	color: #4d6778;
+}
+
+.card .oportunidades {
+	display: flex;
+	height: 53px;
+	align-items: center;
+	margin-right: 30px;
+}
+
+.card .oportunidades div {
+	border-radius: 9px;
+	padding: 1px 4px;
+	margin: 0 5px;
+	clip-path: view-box;
+	mask: text;
+}
+
+.card .oportunidades div p {
+	font-size: 12px;
+	color: var(--bg);
+	font-weight: bold;
+	width: 100%;
+	height: 100%;
+}
+
+.card .oportunidades .bpm {
+	background-color: #ff5942;
+}
+
+.card .oportunidades .prod-dig {
+	background-color: #ff42e1;
+}
+
+.card .oportunidades .analytics {
+	background-color: #5cff42;
+}
+
+.card .oportunidades .rpa {
+	background-color: #4299ff;
+}

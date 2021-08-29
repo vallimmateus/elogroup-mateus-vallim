@@ -10,3 +10,16 @@ body {
 * {
 	transition: all 0.3s;
 }
+
+:root {
+	--bg: #14222b;
+	--bg2: #070f11;
+	--bg-00: #070f1100;
+	--bg-10: #070f111a;
+	--bg-40: #070f1166;
+	--bg-60: #070f1199;
+	--gray: #424242;
+	--primary: #ff5e42;
+	--primary-00: #ff5e4200;
+	--primary-40: #ff5e4266;
+}

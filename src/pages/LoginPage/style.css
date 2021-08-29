@@ -4,7 +4,7 @@ body {
 	min-height: 100vh;
 	min-width: 100vw;
 	overflow: hidden;
-	background-color: #14222b;
+	background-color: var(--bg);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -15,12 +15,12 @@ body {
 	max-height: 600px;
 	width: 70vw;
 	height: 90vh;
-	background-color: #14222b;
-	border: 5px solid white;
+	background-color: var(--bg);
+	border: 5px solid #fff;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	color: white;
+	color: #fff;
 	flex-direction: column;
 	position: relative;
 }
@@ -58,15 +58,15 @@ form input[value="Register"] {
 	text-transform: uppercase;
 	border: none;
 	border-radius: 0;
-	background-color: #ea4f3e;
+	background-color: var(--primary);
 	cursor: pointer;
 }
 
 form input[value="Register"] {
-	background-color: #424242;
+	background-color: var(--gray);
 }
 
-svg {
+.container svg {
 	position: absolute;
 	top: 30px;
 	left: 30px;
