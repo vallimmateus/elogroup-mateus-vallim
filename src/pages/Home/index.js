@@ -108,6 +108,12 @@ const onDragEnd = (result, columns, setColumns) => {
 export default function Home() {
 	const [columns, setColumns] = useState(columnsFromBackend);
 	const [popup, setPopup] = useState(false);
+	// eslint-disable-next-line
+	const [nome, setNome] = useState("");
+	// eslint-disable-next-line
+	const [phone, setPhone] = useState("");
+	// eslint-disable-next-line
+	const [email, setEmail] = useState("");
 
 	return (
 		<div className="home">
@@ -222,7 +228,11 @@ export default function Home() {
 					Tenha certeza ao arrastar algum.
 				</p>
 			</div>
-			<NewCard trigger={popup} open={setPopup} />
+			<NewCard
+				trigger={popup}
+				open={setPopup}
+				sets={[setNome, setPhone, setEmail]}
+			/>
 		</div>
 	);
 }

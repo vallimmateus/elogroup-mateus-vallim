@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.css";
 import TextField from "../TextField";
 import { FaTimes } from "react-icons/fa";
 
 function NewCard(props) {
-	const [nome, setNome] = useState("");
-	const [phone, setPhone] = useState("");
-	const [email, setEmail] = useState("");
+	const [setNome, setPhone, setEmail] = props.sets;
 
 	return props.trigger ? (
 		<div className="popup">
