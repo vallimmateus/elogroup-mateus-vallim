@@ -11,28 +11,35 @@ div.home {
 }
 
 .home > table {
+	position: relative;
 	flex: 1;
 	background: linear-gradient(var(--bg-40), var(--bg-00));
 	margin-right: 40px;
 	display: flex;
 	flex-direction: column;
+	max-height: calc(100vh - 230px);
+	overflow: hidden;
 }
 
-.home table th {
+.home > table * {
+	transition: transform 0s;
+}
+
+.home table thead tr {
 	display: flex;
 	height: 90px;
 	justify-content: space-around;
 	align-items: center;
 }
 
-.home table th td {
+.home table thead tr td {
 	position: relative;
 	font-size: 25px;
 	font-weight: normal;
 	z-index: 0;
 }
 
-.home table th td::after {
+.home table thead tr td::after {
 	content: "";
 	position: absolute;
 	width: calc(100% + 20px);
@@ -43,21 +50,69 @@ div.home {
 	z-index: -1;
 }
 
-.home table tr {
+.home table tbody {
+	display: flex;
+	height: calc(100vh - 320px);
+}
+
+.home table tbody tr {
 	flex: 1;
 	display: flex;
 }
 
-.home table tr td {
+.home table tr td.column {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
 	overflow-y: auto;
+	height: 100%;
 }
 
-.home > div {
+.home table tr td.column::-webkit-scrollbar {
+	display: none;
+}
+
+.home div.tutorial {
 	background: linear-gradient(var(--primary), var(--primary-00));
 	width: 380px;
+	padding: 40px 30px;
+	user-select: none;
+}
+
+.home div.tutorial * {
+	margin: 0;
+	padding: 0;
+}
+
+.home div.tutorial p {
+	margin-left: 5px;
+	margin-top: 10px;
+	text-align: justify;
+}
+
+.home .add {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	z-index: 9;
+	font-size: 2em;
+	background-color: var(--primary);
+	color: var(--bg);
+	border-radius: 15px;
+	height: 44px;
+	width: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: color 0.3s, background-color 0.3s, border 0.3s;
+	border: 3px solid var(--primary);
+}
+
+.home .add:hover {
+	color: var(--primary);
+	background-color: var(--bg-40);
+	border: 3px solid var(--primary);
 }

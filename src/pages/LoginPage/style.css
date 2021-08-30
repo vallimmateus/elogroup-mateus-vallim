@@ -43,7 +43,7 @@ form div input {
 	color: #fff;
 }
 
-form > input:first-of-type {
+form > a {
 	margin-bottom: 20px;
 }
 
