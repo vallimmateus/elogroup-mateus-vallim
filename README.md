@@ -10,6 +10,10 @@ A aplicação está hospedada, além deste repositório, pela Vercel no seguinte
 
 ----
 
+O design foi baseado na identidade visual da EloGroup proposto no site da empresa e foi prototipado no Figma no link [Figma elogroup-mateus-vallim](https://www.figma.com/file/7UI6NSKn2Bz0Reh90Qu67K/Untitled?node-id=0%3A1)
+
+----
+
 Infelizmente não consegui completar o desafio, faltando os seguintes itens:
 
 1. Sistema de login e registro baseado em LocalStorage;
